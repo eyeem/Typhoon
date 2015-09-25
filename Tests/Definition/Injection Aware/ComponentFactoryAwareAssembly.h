@@ -12,7 +12,12 @@
 #import <Foundation/Foundation.h>
 #import "TyphoonAssembly.h"
 
+@interface ComponentFactoryAwareCollabortingAssembly : TyphoonAssembly
+- (id)collaboratingAssemblyObject;
+@end
+
 @interface ComponentFactoryAwareAssembly : TyphoonAssembly
+@property (readonly) ComponentFactoryAwareCollabortingAssembly *collaboratingAssembly;
 
 - (id)injectionAwareObject;
 

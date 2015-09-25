@@ -78,4 +78,8 @@
     XCTAssertTrue(isRightClass);
 }
 
+- (void)test_factory_with_collaborating_assembly_vending_object {
+    XCTAssertEqualObjects([(id) factory collaboratingAssemblyObject], @1);
+}
+
 @end
